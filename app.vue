@@ -1,6 +1,12 @@
 <template>
   <div>
+    <TheHeader class="sobreposicao" />
     <hero />
-    <mouse_neon />
   </div>
 </template>
+
+<style scoped>
+.sobreposicao{
+  z-index: 10000;
+}
+</style>

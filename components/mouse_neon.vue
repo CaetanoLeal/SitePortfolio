@@ -40,7 +40,7 @@
     transform: translate(-50%, -50%);
     /*box-shadow: 0 0 20px rgba(0, 220, 22), 0 0 40px rgba(4, 247, 69, 0.6);*/
     transition: transform 0.1s ease, background-color 0.2s ease;
-    z-index: 9999;
+    z-index: 0;
     filter: blur(100px);
   }
   </style>
