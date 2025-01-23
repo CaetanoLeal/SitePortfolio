@@ -21,7 +21,7 @@
     padding: 12px;
     border: solid 2px;
     border-color: rgb(1, 204, 1);
-  
+    box-shadow: rgb(0, 120, 14) 2px 7px 14px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: 600;
