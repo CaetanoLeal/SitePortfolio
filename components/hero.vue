@@ -3,12 +3,12 @@
     <MouseNeon /> <!-- Efeito neon do mouse -->
     <div class="content-wrapper">
       <div class="content">
-        <h1>welcome to my website</h1>
-        <p>i am full stack developer</p>
+        <h1>YOUR NAME HERE</h1>
+        <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua.</p>
+        <TheButton :title="'Entrar em contato'" />
       </div>
       <img
         src="../assets/images/bracos-cruzados.png"
-        width="400"
         data-aos="fade-up"
         data-aos-duration="800"
         data-aos-delay="300"
@@ -24,13 +24,13 @@ import MouseNeon from './mouse_neon.vue'; // Importe o componente
 
 <style scoped>
 .hero {
-  position: relative; /* Necessário para que os elementos absolutos fiquem relativos a este contêiner */
+  position: relative;
   width: 100%;
-  height: 99vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Garante que nada escape do contêiner */
+  overflow: hidden;
   background: rgb(0, 97, 11);
   background: linear-gradient(0deg, rgba(0, 97, 11, 1) 0%, rgba(0, 0, 0, 1) 20%);
 }
@@ -39,21 +39,20 @@ import MouseNeon from './mouse_neon.vue'; // Importe o componente
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%; /* Ajuste conforme necessário */
   max-width: 1200px;
-  position: relative; /* Não é estritamente necessário, mas pode ser útil para organizar o layout */
+  position: relative;
 }
 
 .content {
   color: white;
+  margin-right: 30vw;
 }
 
 .hero-image {
-  position: absolute; /* Torna o posicionamento relativo ao contêiner .hero */
-  bottom: 0;          /* Alinha a imagem na parte inferior */
-  right: 0;           /* Alinha a imagem à direita */
-  width: 400px;       /* Define o tamanho da imagem */
-  max-width: 50%;     /* Garante que a imagem não exceda 50% do contêiner */
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  width: initial;
 }
 
 h1 {
