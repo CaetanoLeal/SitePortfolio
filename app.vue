@@ -2,6 +2,7 @@
   <div>
     <TheHeader class="sobreposicao" />
     <hero />
+    <About />
   </div>
 </template>
 
