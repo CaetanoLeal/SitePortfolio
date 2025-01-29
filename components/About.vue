@@ -1,175 +1,101 @@
-<!--<template>
-    <section>
-
-    </section>
-</template>
-
-<style scooped>
-table {
-    border: solid 2px;
-    border-color: rgb(1, 204, 1);
-    box-shadow: rgb(0, 120, 14) 2px 7px 14px;
-}
-td{
-    border-right: solid 2px;
-    border-color: rgb(1, 204, 1);
-    box-shadow: rgb(0, 120, 14) 2px 7px 14px;
-}
-
-</style>-->
-
 <template>
-    <main class="container" id="magnificat">
+    <main class="container" id="about">
       <div class="content" data-aos="fade-in">
         <img
-          src="../assets/images/mao-no-queixo2.png"
-          alt="icone da leal"
-          width="300"
+          src="../assets/images/mão_no_queixo.png"
+          alt="mao_no_queixo"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="300"
         />
-        <div align="center">
-        <table>
-        <tr>
-            <td>
-            <h2>Front-end ⭐⭐⭐</h2>
-            <p>
-                <img src="https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg" alt="nuxtjs" width="60" height="60"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="60" height="60"/>
-                <img src="https://bestofjs.org/logos/vuetify.svg" alt="vuetify" width="60" height="60"/>
-            </p>
-            </td>
-            <td>
-            <h2>Database ⭐⭐⭐</h2>
-            <p>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="60" height="60"/>
-                <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="60" height="60"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="60" height="60"/>
-            </p>
-            </td>
-            <td>
-            <h2>Mobile ⭐⭐</h2>
-            <p>
-                <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="60" height="60"/>
-                <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="60" height="60"/>
-            </p>
-            </td>
-            <td>
-            <h2>Back-end ⭐</h2>
-            <p>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="60" height="60"/>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/>
-            </p>
-            </td>
-        </tr>
-        </table>
-    </div>
         <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-          <h2 class="gold">A Magnifica</h2>
-          <h1 class="gold">Venha conhecer nossa distribuidora</h1>
+          <h1>I am {your role here}</h1>
           <p>
-            Distribuidora especializada em temperos e variedades. Oferencendo
-            desde sempre os melhores preços do estado
+            your professional objective Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
           <p>
-            Há mais 2 anos fornecendo os produtos com as melhores qualidades e
-            variedade.
+            I have X years of experience in the technology field and have worked in:<br>
+            <img class="icon" src="../assets/images/logo-leal.png" />
+              Company name, yy/mm/dd - present day<br>
+            <img class="icon" src="../assets/images/magalhaes-logo.jpg" />
+              Company name, yy/mm/dd - yy/mm/dd<br>
+            <img class="icon" src="../assets/images/rk-logo.png" />
+              Company name, yy/mm/dd - yy/mm/dd<br>
           </p>
           <p>
-            Proporcionado aos nossos clientes prosperidade e alegria com cada um
-            de nossos produtos.
+            i speak english, {your native language} and {others languages can you speak}
           </p>
-          <nuxt-link to="leal">
-            <TheButton :title="'Conhecer mais'" class="golden_black_button" />
-          </nuxt-link>
+            <TheButton :title="'SEE MY PROJECTS'" />
         </article>
       </div>
     </main>
   </template>
   
-  <script>
+  <script lang="ts">
   import TheButton from "./TheButton.vue";
-  export default { components: { TheButton } };
+  
+  export default defineComponent({
+    components: {
+      TheButton,
+    },
+  });
   </script>
   
   <style lang="scss" scoped>
   .container {
-    .content {
-      min-height: 100vh;
-      padding: 48px 16px;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+  }
   
-      @media (max-width: 1024px) {
-        flex-direction: column;
-        img {
-          width: 100px;
-        }
-        article {
-          text-align: center;
-        }
+  .content {
+    max-height: 100vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 180px;
+  
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      img {
+        width: 100px;
+        height: auto;
       }
-  
       article {
-        margin-top: 24px;
-        max-width: 600px;
-        h1 {
-          font-size: 2.5rem;
-        }
-        h1,
-        h2 {
-          color: var(--blue-300);
-        }
-        p {
-          margin-bottom: 2rem;
-        }
+        text-align: center;
       }
+    }
   
-      .golden_black_button {
-        background-color: black;
-        color: gold;
+    article {
+      margin-top: 24px;
+      max-width: 600px;
+  
+      h1 {
+        font-size: 2.5rem;
       }
-  
-      .golden_black_button:hover {
-        background-color: gold;
-        color: black;
+      h1,
+      h2 {
+        color: var(--blue-300);
+      }
+      p {
+        margin-bottom: 2rem;
       }
     }
   }
   
-  .container {
-    height: calc(100vh);
-  
-    background-image: url("../assets/images/wallpaper_sessao_1.png");
-    background-size: cover;
-  }
-  
-  .gold {
-    background: linear-gradient(
-      90deg,
-      rgba(207, 210, 69, 1) 0%,
-      rgba(251, 251, 150, 1) 43%,
-      rgba(233, 237, 53, 1) 98%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--blue-300);
+  img {
+    height: 90vh;
+    width: auto;
+    max-width: 100%;
   }
   
   p {
     color: white;
   }
-  table {
-    border: solid 2px;
-    border-color: rgb(1, 204, 1);
-    box-shadow: rgb(0, 120, 14) 2px 7px 14px;
-}
-td{
-    border-right: solid 2px;
-    border-color: rgb(1, 204, 1);
-    box-shadow: rgb(0, 120, 14) 2px 7px 14px;
-}
-  </style>
   
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  </style>

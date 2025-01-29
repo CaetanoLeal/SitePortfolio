@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import MouseNeon from './mouse_neon.vue'; // Importe o componente
+import MouseNeon from './mouse_neon.vue';
 </script>
 
 <style scoped>
