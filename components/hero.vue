@@ -3,7 +3,7 @@
     <MouseNeon /> <!-- Efeito neon do mouse -->
     <div class="content-wrapper">
       <div class="content">
-        <h1>YOUR NAME HERE</h1>
+        <h1 class="text_neon">YOUR NAME HERE</h1>
         <p>Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua.</p>
         <TheButton :title="'Entrar em contato'" />
       </div>
@@ -62,4 +62,13 @@ h1 {
 p {
   font-size: 1.5rem;
 }
+
+.text_neon{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+    text-decoration: underline;
+    text-decoration-color: #00ff00;
+    text-decoration-thickness: 2px;
+  }
+
 </style>

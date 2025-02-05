@@ -9,21 +9,21 @@
           data-aos-delay="300"
         />
         <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-          <h1>I am {your role here}</h1>
+          <h1>I am <span class="text_neon_title">{your role here}</span></h1>
           <p>
             your professional objective Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
           <p>
-            I have X years of experience in the technology field and have worked in:<br>
+            I have <span class="text_neon">X years of experience</span> in the technology field and have worked in:<br>
             <img class="icon" src="../assets/images/logo-leal.png" />
-              Company name, yy/mm/dd - present day<br>
+              <span class="text_neon">Company name</span>, yy/mm/dd - present day<br>
             <img class="icon" src="../assets/images/magalhaes-logo.jpg" />
-              Company name, yy/mm/dd - yy/mm/dd<br>
+              <span class="text_neon">Company name</span>, yy/mm/dd - yy/mm/dd<br>
             <img class="icon" src="../assets/images/rk-logo.png" />
-              Company name, yy/mm/dd - yy/mm/dd<br>
+              <span class="text_neon">Company name</span>, yy/mm/dd - yy/mm/dd<br>
           </p>
           <p>
-            i speak english, {your native language} and {others languages can you speak}
+            i speak <span class="text_neon">english</span>, <span class="text_neon">{your native language}</span> and <span class="text_neon">{others languages can you speak}</span>
           </p>
             <TheButton :title="'SEE MY PROJECTS'" />
         </article>
@@ -97,5 +97,21 @@
   .icon {
     width: 40px;
     height: 40px;
+  }
+
+  .text_neon{
+    color: #00d700;
+    text-shadow: 0 0 5px #00d700, 0 0 10px #00d700;
+    text-decoration: underline;
+    text-decoration-color: #00d700;
+    text-decoration-thickness: 2px;
+  }
+
+  .text_neon_title{
+    color: #000000;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+    text-decoration: underline;
+    text-decoration-color: #00ff00;
+    text-decoration-thickness: 2px;
   }
   </style>
